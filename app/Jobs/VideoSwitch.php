@@ -65,7 +65,7 @@ class VideoSwitch implements ShouldQueue
         $endFrame = $payload['end_frame'];
         $startFrames = implode("_", $this->task->startFrames());
         $cmdFormat = config('task.exec_path').
-                      "-task_uuid %s ".
+                      " -task_uuid %s ".
                       "-video_dir %s ".
                       "-output_dir %s ".
                       "-ring_rectify_file %s ".
