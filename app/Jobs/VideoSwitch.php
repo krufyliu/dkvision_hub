@@ -54,11 +54,11 @@ class VideoSwitch implements ShouldQueue
             mkdir($outputDir, 0777, true);
         }
         $snDir = $this->task->configDir();
-        $ringRectifyFile = "$snDir/ring_rectify.xml";
-        $cameraSettingFile = "$snDir/camera_setting.xml";
-        $topRectifyFile = "$snDir/top_rectify.xml";
-        $bottomRectifyFile = "$snDir/bottom_rectify.xml";
-        $mixRectifyFile = "$snDir/mix_rectify.xml";
+        $ringRectifyFile = "/home/tpys/dataset/20160808_tianlianhu_done/20160808_lanqiu_gopro/config/ring_rectify.xml";
+        $cameraSettingFile = "/home/tpys/dataset/20160808_tianlianhu_done/20160808_lanqiu_gopro/config/camera_setting.xml";
+        $topRectifyFile = "/home/tpys/dataset/20160808_tianlianhu_done/20160808_lanqiu_gopro/config/top_rectify.xml";
+        $bottomRectifyFile = "/home/tpys/dataset/20160808_tianlianhu_done/20160808_lanqiu_gopro/config/bottom_rectify.xml";
+        $mixRectifyFile = "/home/tpys/dataset/20160808_tianlianhu_done/20160808_lanqiu_gopro/config/mix_rectify.xml";
         $enableTop = $payload['enable_top'];
         $enableBottom = $payload['enable_bottom'];
         $enableColorAdjust = $payload['enable_coloradjust'];
