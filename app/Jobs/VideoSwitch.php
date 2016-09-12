@@ -64,6 +64,7 @@ class VideoSwitch implements ShouldQueue
         $enableColorAdjust = $payload['enable_coloradjust'];
         $startFrame = $payload['start_frame'];
         $endFrame = $payload['end_frame'];
+        $time_alignment = implode('_', $payload['time_alignment']);
         $cmdFormat = config('task.exec_path')." ".
                       "-video_dir %s ".
                       "-output_dir %s ".
